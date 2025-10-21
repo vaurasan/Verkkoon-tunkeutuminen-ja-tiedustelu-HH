@@ -10,6 +10,8 @@ Tässä tehtävässä on ideana ainoastaan osoittaa Wireshark kuvankaappauksessa
 
 ---
 
+https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h0-hei-maailma
+
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
 Pohjana Tero Karvinen 2025: Verkkoon tunkeutuminen ja tiedustelu
