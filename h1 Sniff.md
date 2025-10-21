@@ -14,7 +14,7 @@
 | Virtalähde   | Asus 750W TUF Gaming Gold        | ATX 80 Plus      |
 | Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
 
-Käyttöjärjestelmä: Windows 11 Pro 24H2
+Käyttöjärjestelmä: Windows 11 Pro 25H2
 
 
 
