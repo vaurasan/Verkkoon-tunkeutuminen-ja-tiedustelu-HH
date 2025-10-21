@@ -46,6 +46,13 @@ kali-linux-2025.3-virtualbox-amd64
 ##
 
 
+### Lähteet
+
+https://terokarvinen.com/wireshark-getting-started/
+
+https://terokarvinen.com/network-interface-linux/
+
+---
 
 Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 2 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html
 
