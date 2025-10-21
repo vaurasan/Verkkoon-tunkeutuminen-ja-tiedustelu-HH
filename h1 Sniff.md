@@ -1,4 +1,4 @@
-# h FOOBAR
+# h1 Sniff
 
 #### Oma Host kokoonpanoni:
 
@@ -6,7 +6,7 @@
 | :---        |    :----:   |          ---: |
 | Emolevy | MSI B550-A PRO | ATX, AM4 |
 | Prosessori   | AMD Ryzen 9 5900X | 12-Core 3.70 GHz |
-| RAM   | G.Skill  Ripjaws V |  32GB (4x8GB) DDR4 3200MHz, CL 16, 1.3  |
+| RAM   | G.Skill  Ripjaws V |  32GB (4x8GB) DDR4 3200MHz  |
 | Näytönohjain   | Sapphire PULSE AMD Radeon RX 7900 GRE        | 16GB     |
 | Kovalevy   | Kingston 1TB        | A2000 NVMe PCIe SSD M.2      |
 | Kovalevy   | Crucial 512GB        | MX100 SSD     |
@@ -16,9 +16,14 @@
 
 Käyttöjärjestelmä: Windows 11 Pro 25H2
 
+Oracle VirtualBox 7.1.12
+kali-linux-2025.3-virtualbox-amd64
 
+## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
-## Otsikko
+[Karvinen 2025: Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
+
+[Karvinen 2025: Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
 
 
 
