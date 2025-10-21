@@ -17,6 +17,7 @@
 Käyttöjärjestelmä: Windows 11 Pro 25H2
 
 Oracle VirtualBox 7.1.12
+
 kali-linux-2025.3-virtualbox-amd64
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
