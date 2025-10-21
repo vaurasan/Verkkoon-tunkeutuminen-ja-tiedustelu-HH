@@ -24,6 +24,22 @@ kali-linux-2025.3-virtualbox-amd64
 
 [Karvinen 2025: Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
 
+- Wiresharkin asentaminen:
+```bash
+sudo apt-get install wireshark
+```
+- Non-superkäyttäjille annetaan mahdollisuus kaapata paketteja "Yes", jotta ei tarvitse käyttää isoilla käyttöoikeuksilla.
+- Lisätään oma käyttäjä Wiresharkin sallimiin käyttäjiin:
+```bash
+sudo adduser tero wireshark #<-- korvaa "tero" omalla käyttäjätunnuksella
+```
+- Tämän jälkeen uudelleenkirjautuminen.
+- Komennolla "wireshark" käynnistetään Wiresharkin graafinen käyttöliittymä.
+- Aluksi valitaan verkkointerface, jota tutkitaan. Voi myös valita "any", jolloin kaikkien interfacejen liikenne kaapataan.
+- Hain evä symbolilla käynnistetään ja pysäytetään verkkoliikenteen kaappaus.
+- Kaappauksia voidaan tallentaa .pcap tiedostomuotoon, ja avata myöhempää tarkastelua varten.
+- 
+
 [Karvinen 2025: Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
 
 
