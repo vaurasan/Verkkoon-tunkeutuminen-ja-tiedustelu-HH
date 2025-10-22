@@ -72,7 +72,7 @@ Ainoa haaste oli saada suomenkielinen näppäimistö asetettua, siihen löytyi t
 
 Oikeasta alakulmasta Network Adapter -> Network settings. Sieltä virtuaalisesti kaapeli irti.
 
-![
+![101](kuvat/h101.png)
 
 
 ##
