@@ -78,19 +78,46 @@ Ainoa haaste oli saada suomenkielinen näppäimistö asetettua, siihen löytyi t
 
 ## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
 
-Wireshark oli Kali Linuxissa valmiina, joten käynnistän terminaalin ja kirjoitan "wireshark".
+Wireshark oli Kali Linuxissa valmiina, joten käynnistän terminaalin ja kirjoitan "wireshark", joka käynnistää Wiresharkin.
 
+Jos olisin käyttänyt Debiania tai muuta, olisin joutunut asentamaan Wiresharkin: Tero Karvinen 2025: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
+```bash
+sudo apt-get update
+sudo apt-get install wireshark
+sudo adduser santeri wireshark
+newgrp wireshark
+wireshark
+```
+Laitan haineväsymbolista verkon kaappauksen päälle ja käynnistän Firefox selaimen. Wiresharkiin ilmestyy liikennettä.
 
+![102](kuvat/h102.png)
 
+## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Voit selityksen tueksi laatikoida ne ruutukaappauksesta. (Voit käyttää vastauksesi osana ruutukaappaustasi h0-tehtävästä, mutta tässä tehtävässä tarvitaan myös sanallinen selitys.)
 
-##
+Laitan Wiresharkin nauhoittamaan liikennettä ja menen selaimella terokarvinen.com:iin. Wiresharkista löytyy muutama rivi DNS kyselyä, jota on hyvä tutkia.
 
+Kuvassa näkyy: 
+
+- **Link Layer**: Source ja destination MAC osoitteet.
+- **Ethernet Layer**: IPv4 Internet Protocol version 4.
+- **Transport Layer**: UDP User Datagram Protocol, lähde ja kohde portit.
+- **Application Layer**: Domain Name System DNS kysely.
+
+Wikipedia: [Internet protocol suite](https://en.wikipedia.org/wiki/Internet_protocol_suite)
+
+![103](kuvat/h103.png)
+
+## e) Mitäs tuli surffattua? Avaa surfing-secure.pcap. Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
 
 https://terokarvinen.com/network-interface-linux/
+
+https://www.kali.org/get-kali/#kali-virtual-machines
+
+https://en.wikipedia.org/wiki/Internet_protocol_suite
 
 ---
 
