@@ -70,12 +70,15 @@ Ainoa haaste oli saada suomenkielinen näppäimistö asetettua, siihen löytyi t
 
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
-Oikeasta alakulmasta Network Adapter -> Network settings. Sieltä virtuaalisesti kaapeli irti.
+- Oikeasta alakulmasta Network Adapter -> Network settings.
+- Sieltä virtuaalisesti kaapeli irti (täppä pois "Cable Connected"-kohdasta.
 
 ![101](kuvat/h101.png)
 
 
-##
+## c) Wireshark. Asenna Wireshark. Sieppaa liikennettä Wiresharkilla. (Vain omaa liikennettäsi. Voit käyttää tähän esimerkiksi virtuaalikonetta).
+
+Wireshark oli Kali Linuxissa valmiina, joten käynnistän terminaalin ja kirjoitan "wireshark".
 
 
 
