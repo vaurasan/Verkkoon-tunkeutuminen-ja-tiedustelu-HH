@@ -1,6 +1,6 @@
 # h1 Sniff
 
-#### Oma Host kokoonpanoni:
+#### Oma host kokoonpanoni:
 
 | Komponentti | Kuvaus | Lisätiedot |
 | :---        |    :----:   |          ---: |
@@ -36,9 +36,11 @@ sudo adduser tero wireshark #<-- korvaa "tero" omalla käyttäjätunnuksella
 - Tämän jälkeen uudelleenkirjautuminen.
 - Komennolla "wireshark" käynnistetään Wiresharkin graafinen käyttöliittymä.
 - Aluksi valitaan verkkointerface, jota tutkitaan. Voi myös valita "any", jolloin kaikkien interfacejen liikenne kaapataan.
-- Hain evä symbolilla käynnistetään ja pysäytetään verkkoliikenteen kaappaus.
+- Hain evä symbolilla käynnistetään verkkoliikenteen kaappaus, kannattaa kaapata kerralla pieniä määäriä, jotta löydösten tutkiminen on selkeämpää.
 - Kaappauksia voidaan tallentaa .pcap tiedostomuotoon, ja avata myöhempää tarkastelua varten.
-- 
+- **Statistics** menusta näkee nopeasti yleiskuvaa, kuten *Endpoints*, joka näyttää listan päätelaitteista.
+- Voit filtteröidä hakusanoilla tietoja kaappauksesta.
+- **Follow: TCP Stream**:llä voit seurata *keskustelua* tekstinä, kätevää salaamattomissa yhteyksissä.
 
 [Karvinen 2025: Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
 
