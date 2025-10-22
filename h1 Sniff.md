@@ -138,6 +138,12 @@ Viimeisessä kuvassa kaappauksen lopussa tapahtuu TCP yhteyden lopetuksen kätte
 
 ![106](h106.png)
 
+## f) Vapaaehtoinen, vaikea: Mitä selainta käyttäjä käyttää? surfing-secure.pcap (Päivitys 2025-03-31 w14 ma - muutin tehtävän vapaaehtoiseksi Giang:n suosituksesta)
+
+Tutkailin aikani paketteja ja otin selvää, voiko DNS kyselyssä lähtevällä portilla olla jotain tekemistä asian kanssa. Sen verran selvisi: https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports, että selain usein lähettää kyselyn jostain satunnaisesta portista, kuten tässä tapauksessa ensimmäinen kysely lähtee portista 46428. Suurin osa liikenteestä on salattua, joten en päässyt jyvälle.
+
+Katsoin myöhemmin oikean vastauksen tähän tehtävään.
+
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
@@ -149,6 +155,8 @@ https://www.kali.org/get-kali/#kali-virtual-machines
 https://en.wikipedia.org/wiki/Internet_protocol_suite
 
 https://en.wikipedia.org/wiki/QUIC
+
+https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports
 
 ---
 
