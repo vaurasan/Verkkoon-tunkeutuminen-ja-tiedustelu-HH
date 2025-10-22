@@ -158,6 +158,14 @@ Tämäkään ei mitään kerro, mutta sain idean tuosta oikeassa alakulmassa luk
 
 ## h) Millä weppipalvelimella käyttäjä on surffaillut? [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap) - Huonoja uutisia: yhteys on suojattu TLS-salauksella.
 
+- 3.75.10.80 <- ei löydy
+- 34.117.188.166 <- ei löydy, selain palautti ainoastaan tekstin "fault filter abort"
+- 139.162.131.217 <- https://app.terokarvinen.com/
+- 216.58.210.164 <- google.com
+
+## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
+
+
 
 
 ### Lähteet
