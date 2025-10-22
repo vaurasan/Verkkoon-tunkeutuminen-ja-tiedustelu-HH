@@ -138,13 +138,13 @@ Viimeisessä kuvassa kaappauksen lopussa tapahtuu TCP yhteyden lopetuksen kätte
 
 ![106](kuvat/h106.png)
 
-## f) Vapaaehtoinen, vaikea: Mitä selainta käyttäjä käyttää? surfing-secure.pcap (Päivitys 2025-03-31 w14 ma - muutin tehtävän vapaaehtoiseksi Giang:n suosituksesta)
+## f) Vapaaehtoinen, vaikea: Mitä selainta käyttäjä käyttää? [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap) (Päivitys 2025-03-31 w14 ma - muutin tehtävän vapaaehtoiseksi Giang:n suosituksesta)
 
-Tutkailin aikani paketteja ja otin selvää, voiko DNS kyselyssä lähtevällä portilla olla jotain tekemistä asian kanssa. Sen verran selvisi: https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports, että selain usein lähettää kyselyn jostain satunnaisesta portista, kuten tässä tapauksessa ensimmäinen kysely lähtee portista 46428. Suurin osa liikenteestä on salattua, joten en päässyt jyvälle.
+Tutkailin aikani paketteja ja otin selvää, voiko DNS kyselyssä lähtevällä portilla olla jotain tekemistä asian kanssa. Sen verran selvisi: https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports, että selain usein lähettää kyselyn jostain satunnaisesta portista. Tässä tapauksessa ensimmäinen kysely lähtee portista 46428, eli siis lähtevällä portilla ei ole mitään tekemistä asian kanssa. Suurin osa liikenteestä on salattua, joten en päässyt alkuunkaan jyvälle asiasta.
 
 Katsoin myöhemmin oikean vastauksen tähän tehtävään.
 
-## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
+## g) Minkä merkkinen verkkokortti käyttäjällä on? [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap)
 
 Tutkin ensimmäisen paketin DNS kyselyä. Source MAC osoite on 52:54:00:2f:e1:e5, josta ensimmäisen puoliskon (52:54:00) pitäisi kertoa mikä valmistaja on kyseessä (https://dnschecker.org/mac-lookup.php). Tässä tapauksessa mikään internetin MAC kyselyistä ei löytänyt mitään, olikohan kysymys kompa?
 
@@ -155,6 +155,10 @@ https://macaddress.io/mac-address-lookup/85EQoqbm5e Kyselyllä 52:54:00 tuli seu
 ![h108](kuvat/h108.png)
 
 Tämäkään ei mitään kerro, mutta sain idean tuosta oikeassa alakulmassa lukevista havainnoista. Pähkäilyni tulos on, että kyseessä voisi olla virtuaalikone, ja tällöin MAC osoite on looginen/virtuaalinen, eikä valmistajaa ole.
+
+## h) Millä weppipalvelimella käyttäjä on surffaillut? [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap) - Huonoja uutisia: yhteys on suojattu TLS-salauksella.
+
+
 
 ### Lähteet
 
