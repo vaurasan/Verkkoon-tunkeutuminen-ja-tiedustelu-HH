@@ -144,6 +144,10 @@ Tutkailin aikani paketteja ja otin selvää, voiko DNS kyselyssä lähtevällä 
 
 Katsoin myöhemmin oikean vastauksen tähän tehtävään.
 
+## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
+
+Tutkin ensimmäisen paketin DNS kyselyä. Source MAC osoite on 52:54:00:2f:e1:e5, josta ensimmäisen puoliskon (52:54:00) pitäisi kertoa mikä valmistaja on kyseessä (https://dnschecker.org/mac-lookup.php). Tässä tapauksessa mikään internetin MAC kyselyistä ei löytänyt mitään, olikohan kysymys kompa?
+
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
@@ -157,6 +161,8 @@ https://en.wikipedia.org/wiki/Internet_protocol_suite
 https://en.wikipedia.org/wiki/QUIC
 
 https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports
+
+https://dnschecker.org/mac-lookup.php
 
 ---
 
