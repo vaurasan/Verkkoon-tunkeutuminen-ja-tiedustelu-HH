@@ -148,6 +148,12 @@ Katsoin myöhemmin oikean vastauksen tähän tehtävään.
 
 Tutkin ensimmäisen paketin DNS kyselyä. Source MAC osoite on 52:54:00:2f:e1:e5, josta ensimmäisen puoliskon (52:54:00) pitäisi kertoa mikä valmistaja on kyseessä (https://dnschecker.org/mac-lookup.php). Tässä tapauksessa mikään internetin MAC kyselyistä ei löytänyt mitään, olikohan kysymys kompa?
 
+https://macaddress.io/mac-address-lookup/85EQoqbm5e Kyselyllä 52:54:00 tuli seuraavanlainen vastaus:
+
+![h108](kuvat/h108.png)
+
+Pähkäilyni tulos on, että kyseessä voisi olla virtuaalikone, ja tällöin MAC osoite on looginen/virtuaalinen, eikä valmistajaa ole.
+
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
@@ -163,6 +169,8 @@ https://en.wikipedia.org/wiki/QUIC
 https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports
 
 https://dnschecker.org/mac-lookup.php
+
+https://macaddress.io/mac-address-lookup/85EQoqbm5e
 
 ---
 
