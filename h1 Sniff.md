@@ -22,7 +22,7 @@ kali-linux-2025.3-virtualbox-amd64
 
 ## x) Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneella, vain lukeminen tai kuunteleminen ja tiivistelmä riittää. Tiivistämiseen riittää muutama ranskalainen viiva.)
 
-[Karvinen 2025: Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
+### Karvinen 2025: [Wireshark - Getting Started](https://terokarvinen.com/wireshark-getting-started/)
 
 - Wiresharkin asentaminen:
 ```bash
@@ -42,19 +42,37 @@ sudo adduser tero wireshark #<-- korvaa "tero" omalla käyttäjätunnuksella
 - Voit filtteröidä hakusanoilla tietoja kaappauksesta.
 - **Follow: TCP Stream**:llä voit seurata *keskustelua* tekstinä, kätevää salaamattomissa yhteyksissä.
 
-[Karvinen 2025: Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
+### Karvinen 2025: [Network Interface Names on Linux](https://terokarvinen.com/network-interface-linux/)
+
+- *Network interface* on kuin fyysinen verkkokortti, mutta se ei aina ole fyysinen kortti.
+- **Debian** ja muut **systemd** distrot käyttävät seuraavanlaista network interfacejen nimeämisjärjestelmää:
+  - **en** = Wired **E**ther**n**et.
+  - **wl** = **WL**AN, wireless local area network, WiFi.
+  - **lo** = **Lo**opback adapter.
+- Loopback adapteri on tietokoneen sisäisille yhteyksille: **localhost**. 127.0.0.1 IPv4 local osoitteet ovat 127.0.0.1/8, IPv6 ::1/128.
+- Yleisiä network interface nimiä:
+  - wlp4s0 = WiFi kortti.
+  - enp1s0 = Langallinen ethernet kortti.
+  - lo = Loopback adapteri.
+  - enx738899738899 = Langallinen ethernet kortti. X:n jälkeinen numero on kortin MAC numero.
+- Voit tarkistaa omat interfacet komennoilla:
+```bash
+ip a
+ip route
+```
+
+## a) Linux. Asenna Debian tai Kali Linux virtuaalikoneeseen. (Tätä alakohtaa ei poikkeuksellisesti tarvitse raportoida, jos sinulla ei ole mitään ongelmia. Jos on mitään haasteita, tee täsmällinen raportti)
+
+"Asensin" Kali Linuxin Virtualboxiin käyttämällä valmiiksi rakennettua virtuaalikonetta https://www.kali.org/get-kali/#kali-virtual-machines.
+
+Ainoa haaste oli saada suomenkielinen näppäimistö asetettua, siihen löytyi tutkimalla polku: **Applications -> Usual Applications -> Settings -> Keyboard -> Layout**, johon lisäsin keyboard layout kohtaan "Finnish" ja poistin oletusnäppäimistön.
 
 
+## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
 
+Oikeasta alakulmasta Network Adapter -> Network settings. Sieltä virtuaalisesti kaapeli irti.
 
-## Otsikko
-
-
-
-
-## Otsikko
-
-
+![
 
 
 ##
