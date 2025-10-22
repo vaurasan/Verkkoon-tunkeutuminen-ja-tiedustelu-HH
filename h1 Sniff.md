@@ -136,7 +136,7 @@ Viimeisessä kuvassa kaappauksen lopussa tapahtuu TCP yhteyden lopetuksen kätte
 - FIN, ACK
 - ACK
 
-![106](h106.png)
+![106](kuvat/h106.png)
 
 ## f) Vapaaehtoinen, vaikea: Mitä selainta käyttäjä käyttää? surfing-secure.pcap (Päivitys 2025-03-31 w14 ma - muutin tehtävän vapaaehtoiseksi Giang:n suosituksesta)
 
@@ -147,6 +147,8 @@ Katsoin myöhemmin oikean vastauksen tähän tehtävään.
 ## g) Minkä merkkinen verkkokortti käyttäjällä on? surfing-secure.pcap
 
 Tutkin ensimmäisen paketin DNS kyselyä. Source MAC osoite on 52:54:00:2f:e1:e5, josta ensimmäisen puoliskon (52:54:00) pitäisi kertoa mikä valmistaja on kyseessä (https://dnschecker.org/mac-lookup.php). Tässä tapauksessa mikään internetin MAC kyselyistä ei löytänyt mitään, olikohan kysymys kompa?
+
+![107](kuvat/h107.png)
 
 https://macaddress.io/mac-address-lookup/85EQoqbm5e Kyselyllä 52:54:00 tuli seuraavanlainen vastaus:
 
