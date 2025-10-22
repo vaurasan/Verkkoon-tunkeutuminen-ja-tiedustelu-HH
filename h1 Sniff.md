@@ -111,8 +111,31 @@ Wikipedia: [Internet protocol suite](https://en.wikipedia.org/wiki/Internet_prot
 
 - Alussa google.com DNS kysely, josta saadaan lopulta vastaukseksi ip osoite: 216.58.210.164 <-- Tämä osoite vie google.comiin.
 - terokarvinen.com DNS kysely, josta vastaus: 139.162.131.217 <-- Tämä vie app.terokarvinen.com:iin
+- Tässä kaappauksessa mennään siis google.comin kautta app.terokarvinen.comiin
 
+Kuvassa näkyy kaappaus surfing-secure.pcap:sta Wiresharkissa.
 
+![104](kuvat/h104.png)
+
+Seuraava kuva on Wiresharkin näkymä, johon valitsin kaikki rivit, otin esille Statisticsista: Endpoints, Protocol Hierarchy, Capture File Properties, Packet Lenghts, sekä I/O Graphs
+
+![105](kuvat/h105.png)
+
+Kuvasta voimme todeta:
+
+- 7 eri IP osoitetta, joista 192-alkuiset omassa lähiverkossa.
+- Kaappaus on kestänyt 7 sekuntia 28.3.2025 klo 11:28:09-11:28:16
+- Paketteja 283.
+- Yksi TCP virhe.
+- QUIC protokolla on minulle täysin uusi käsite. [Wikipedia](https://en.wikipedia.org/wiki/QUIC) kertoo, että se on Googlla kehitetty, vuonna 2013 julkaistu protokolla, joka ottaa useita UDP yhteyksiä samanaikaisesti eri portteihin.
+
+Viimeisessä kuvassa kaappauksen lopussa tapahtuu TCP yhteyden lopetuksen kättely:
+
+- FIN, ACK
+- FIN, ACK
+- ACK
+
+![106](h106.png)
 
 ### Lähteet
 
@@ -123,6 +146,8 @@ https://terokarvinen.com/network-interface-linux/
 https://www.kali.org/get-kali/#kali-virtual-machines
 
 https://en.wikipedia.org/wiki/Internet_protocol_suite
+
+https://en.wikipedia.org/wiki/QUIC
 
 ---
 
