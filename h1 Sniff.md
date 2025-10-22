@@ -109,6 +109,11 @@ Wikipedia: [Internet protocol suite](https://en.wikipedia.org/wiki/Internet_prot
 
 ## e) Mitäs tuli surffattua? Avaa [surfing-secure.pcap](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/surfing-secure.pcap). Tutustu siihen pintapuolisesti ja kuvaile, millainen kaappaus on kyseessä. Tässä siis vain lyhyesti ja yleisellä tasolla. Voit esimerkiksi vilkaista, montako konetta näkyy, mitä protokollia pistää silmään. Määrästä voit arvioida esimerkiksi pakettien lukumäärää, kaappauksen kokoa ja kestoa.
 
+- Alussa google.com DNS kysely, josta saadaan lopulta vastaukseksi ip osoite: 216.58.210.164 <-- Tämä osoite vie google.comiin.
+- terokarvinen.com DNS kysely, josta vastaus: 139.162.131.217 <-- Tämä vie app.terokarvinen.com:iin
+
+
+
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
