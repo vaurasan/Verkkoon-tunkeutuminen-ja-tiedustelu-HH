@@ -154,7 +154,7 @@ https://macaddress.io/mac-address-lookup/85EQoqbm5e Kyselyllä 52:54:00 tuli seu
 
 ![h108](kuvat/h108.png)
 
-Pähkäilyni tulos on, että kyseessä voisi olla virtuaalikone, ja tällöin MAC osoite on looginen/virtuaalinen, eikä valmistajaa ole.
+Tämäkään ei mitään kerro, mutta sain idean tuosta oikeassa alakulmassa lukevista havainnoista. Pähkäilyni tulos on, että kyseessä voisi olla virtuaalikone, ja tällöin MAC osoite on looginen/virtuaalinen, eikä valmistajaa ole.
 
 ### Lähteet
 
