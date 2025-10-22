@@ -165,7 +165,7 @@ Tämäkään ei mitään kerro, mutta sain idean tuosta oikeassa alakulmassa luk
 
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
 
-
+Asetin Firefox selaimen osoiteriville google.fi valmiiksi. Laitoin Wiresharkin tallennuksen päälle ja painoin selaimen osoiterivillä Returnia (Enter). Otan tarkkailuun ensimmäisen 
 
 
 ### Lähteet
