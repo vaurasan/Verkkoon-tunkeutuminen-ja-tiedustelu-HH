@@ -11,7 +11,7 @@
 | Kovalevy   | Kingston 1TB        | A2000 NVMe PCIe SSD M.2      |
 | Kovalevy   | Crucial 512GB        | MX100 SSD     |
 | Kovalevy   | Crucial 256GB        | MX100 SSD     |
-| Virtalähde   | Asus 750W TUF Gaming Gold        | ATX 80 Plus      |
+| Virtalähde   | Asus 750W TUF       | ATX 80 Plus      |
 | Kotelo   | Phanteks Enthoo Pro       |  Full Tower      |
 
 Käyttöjärjestelmä: Windows 11 Pro 25H2
