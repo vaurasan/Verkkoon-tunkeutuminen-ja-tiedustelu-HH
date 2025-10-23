@@ -186,6 +186,13 @@ Tässä siis tapahtuu DNS nimikysely google.fi:lle. Merkitsin kuviin punakynäll
 
 Tähän frame 5 kuvaan otin mukaan tuon "Frame" osion. Kuvassa siis eräs vastaus google.fi DNS nimikyselyyn, jossa näkyy vastauksena IPv4 osoite.
 
+- **UTC Arrival Time**: milloin kaappaus on otettu.
+- **Frame Length**: framen pituus tavuina.
+- **Capture Length**: kaappauksen pituus tavuina.
+- **Protocols in frame**: mitä protokollia frame sisältää.
+- User Datagram Protocol, kohde ja lähde portit. Tässä on lähteenä portti 53.
+- Lopussa näkyy vastaus google.fi kyselylle, 142.251.38.37.
+
 ### Lähteet
 
 https://terokarvinen.com/wireshark-getting-started/
