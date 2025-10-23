@@ -178,7 +178,7 @@ Tässä siis tapahtuu DNS nimikysely google.fi:lle. Merkitsin kuviin punakynäll
 - **IPv4** protokolla, lähde ja kohde osoitteet
 - **Time to Live**, eli TTL. Tarkoittaa kuinka monta kertaa paketti voi liikkuta reitittimeltä toiselle, ennen kuin se dropataan. Tällä vältytään pakettien loputtomilta loopeilta. https://docs.oracle.com/en/operating-systems/solaris/oracle-solaris/11.4/tuning/ttl-parameter-ipv4.html.
 - **Protocol**: **UDP** protokolla käytössä, jota käytetään DNS nimikyselyissä.
-- **Src (source) Port**: 39331, selaimen käyttämä portti. **Dst (destination) Port**: 53, porttia 53 on yleinen käytössä oleva portti DNS:lle. https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports.
+- **Src (source) Port**: 39331, selaimen käyttämä portti. **Dst (destination) Port**: 53, portti 53 on yleinen käytössä oleva portti DNS:lle. https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports.
 - **Domain Name System (query)**: kertoo kyseessä olevan DNS kysely.
 - **Queries**: kertoo mitä on kysytty, tässä tapauksessa google.fi.
 - Oikealla ylhäällä näkyy payload bittimuodossa. Vieressä tässä tapauksessa selkokielinen payload, koska yhteys on salaamaton. https://www.techtarget.com/searchnetworking/tutorial/Examine-a-captured-packet-using-Wireshark.
