@@ -165,8 +165,26 @@ Tämäkään ei mitään kerro, mutta sain idean tuosta oikeassa alakulmassa luk
 
 ## i) Analyysi. Sieppaa pieni määrä omaa liikennettäsi. Analysoi se, eli selitä mahdollisimman perusteellisesti, mitä tapahtuu. (Tässä pääpaino on siis analyysillä ja selityksellä, joten liikennettä kannattaa ottaa tarkasteluun todella vähän - vaikka vain pari pakettia. Gurut huomio: Selitä myös mielestäsi yksinkertaiset asiat.)
 
-Asetin Firefox selaimen osoiteriville google.fi valmiiksi. Laitoin Wiresharkin tallennuksen päälle ja painoin selaimen osoiterivillä Returnia (Enter). Otan tarkkailuun ensimmäisen 
+Asetin Firefox selaimen osoiteriville google.fi valmiiksi. Laitoin Wiresharkin tallennuksen päälle ja painoin selaimen osoiterivillä Returnia (Enter). Otan tarkkailuun ensimmäisen framen jossa näkyy lähtevä DNS kysely, ja viidennen framen jossa näkyy vastaus tuohon DNS kyselyyn. Tästä https://www.techtarget.com/searchnetworking/tutorial/Examine-a-captured-packet-using-Wireshark on apua tutkimisessa.
 
+Tässä siis tapahtuu DNS nimikysely google.fi:lle. Merkitsin kuviin punakynällä asioita.
+
+![109](kuvat/h109.png)
+
+- Ylimpänä näkyy framen yleiset tiedot, lähde ja kohde **IPv4** osoitteet, käytössä oleva protokolla **DNS**, **framen pituus** tavuina, info: kyseessä kysely google.fi:lle.
+- **Frame**: 69 tavua pitkä. Interface id **eth0** on vanhaa perua 90-luvulta https://wiki.debian.org/NetworkInterfaceNames.
+- Kohde ja lähde **MAC** osoitteet
+- **IPv4** protokolla, lähde ja kohde osoitteet
+- **Time to Live**, eli TTL. Tarkoittaa kuinka monta kertaa paketti voi liikkuta reitittimeltä toiselle, ennen kuin se dropataan. https://docs.oracle.com/en/operating-systems/solaris/oracle-solaris/11.4/tuning/ttl-parameter-ipv4.html.
+
+
+
+
+
+
+![110](kuvat/h110.png)
+
+Tähän frame 5 kuvaan otin mukaan tuon "Frame" osion. Kuvassa siis eräs vastaus google.fi DNS nimikyselyyn, jossa näkyy vastauksena IPv4 osoite.
 
 ### Lähteet
 
@@ -185,6 +203,10 @@ https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports
 https://dnschecker.org/mac-lookup.php
 
 https://macaddress.io/mac-address-lookup/85EQoqbm5e
+
+https://www.techtarget.com/searchnetworking/tutorial/Examine-a-captured-packet-using-Wireshark
+
+https://wiki.debian.org/NetworkInterfaceNames
 
 ---
 
