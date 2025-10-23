@@ -65,7 +65,7 @@ ip route
 
 "Asensin" Kali Linuxin Virtualboxiin käyttämällä valmiiksi rakennettua virtuaalikonetta https://www.kali.org/get-kali/#kali-virtual-machines.
 
-Ainoa haaste oli saada suomenkielinen näppäimistö asetettua, siihen löytyi tutkimalla polku: **Applications -> Usual Applications -> Settings -> Keyboard -> Layout**, johon lisäsin keyboard layout kohtaan "Finnish" ja poistin oletusnäppäimistön.
+Ainoa "haaste" oli saada suomenkielinen näppäimistö asetettua, siihen löytyi tutkimalla polku: **Applications -> Usual Applications -> Settings -> Keyboard -> Layout**, johon lisäsin keyboard layout kohtaan "Finnish" ja poistin oletusnäppäimistön.
 
 
 ## b) Ei voi kalastaa. Osoita, että pystyt katkaisemaan ja palauttamaan virtuaalikoneen Internet-yhteyden.
