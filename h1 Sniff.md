@@ -175,12 +175,12 @@ Tässä siis tapahtuu DNS nimikysely google.fi:lle. Merkitsin kuviin punakynäll
 - **Frame**: 69 tavua pitkä. Interface id **eth0** on vanhaa perua 90-luvulta https://wiki.debian.org/NetworkInterfaceNames.
 - Kohde ja lähde **MAC** osoitteet
 - **IPv4** protokolla, lähde ja kohde osoitteet
-- **Time to Live**, eli TTL. Tarkoittaa kuinka monta kertaa paketti voi liikkuta reitittimeltä toiselle, ennen kuin se dropataan. https://docs.oracle.com/en/operating-systems/solaris/oracle-solaris/11.4/tuning/ttl-parameter-ipv4.html.
-
-
-
-
-
+- **Time to Live**, eli TTL. Tarkoittaa kuinka monta kertaa paketti voi liikkuta reitittimeltä toiselle, ennen kuin se dropataan. Tällä vältytään pakettien loputtomilta loopeilta. https://docs.oracle.com/en/operating-systems/solaris/oracle-solaris/11.4/tuning/ttl-parameter-ipv4.html.
+- **Protocol**: **UDP** protokolla käytössä, jota käytetään DNS nimikyselyissä.
+- **Src (source) Port**: 39331, selaimen käyttämä portti. **Dst (destination) Port**: 53, porttia 53 on yleinen käytössä oleva portti DNS:lle. https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports.
+- **Domain Name System (query)**: kertoo kyseessä olevan DNS kysely.
+- **Queries**: kertoo mitä on kysytty, tässä tapauksessa google.fi.
+- Oikealla ylhäällä näkyy payload bittimuodossa. Vieressä tässä tapauksessa selkokielinen payload, koska yhteys on salaamaton. https://www.techtarget.com/searchnetworking/tutorial/Examine-a-captured-packet-using-Wireshark.
 
 ![110](kuvat/h110.png)
 
@@ -207,6 +207,8 @@ https://macaddress.io/mac-address-lookup/85EQoqbm5e
 https://www.techtarget.com/searchnetworking/tutorial/Examine-a-captured-packet-using-Wireshark
 
 https://wiki.debian.org/NetworkInterfaceNames
+
+https://learn.microsoft.com/en-us/windows-server/networking/dns/network-ports
 
 ---
 
