@@ -119,14 +119,11 @@ Tuloksia tuli aivan liikaa, pitää muuttaa hakusanaa tarkemmaksi.
 ```bash
 sudo grep -ir "Nmap Scripting"
 ```
-Tällä tulos on jo paljon järkevämpi. Löytyy 
-
+Tällä tulos on jo paljon järkevämpi. Löytyy ainoastaan rivit missä on "Nmap Scripting". Kaikki osumat ovat Apachen acces.log:sta.
 
 ![204](/kuvat/204.png)
 
-
-
-##
+## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
 
 
 ### Lähteet
