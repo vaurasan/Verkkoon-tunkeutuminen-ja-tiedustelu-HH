@@ -97,6 +97,7 @@ Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-h
 
 ## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
+Tarkastellaan Apachen lokeja.
 ```bash
 cd /var/log/apache2/
 sudo tail -F /var/log/apache2/access.log
@@ -106,7 +107,22 @@ sudo tail -F /var/log/apache2/access.log
 
 Monessa kohdassa näkyy "Nmap Scripting Engine;...".
 
+- 127.0.0.1 localhost osoitteesta tullut http-methods skriptin lähettämiä "OPTIONS" pyyntöjä, sekä yksi "GET" pyyntö.
+- Nmap mainostaa itseään oletusarvoisesti. 
 
+Lähdin tutkimaan lokitiedostoja.
+```bash
+cd /var
+grep -ir "nmap" #tähän oli vinkki Karvisen tehtävänannon lopussa, *-ir* etsii kaikista alihakemistoista. 
+```
+Tuloksia tuli aivan liikaa, pitää muuttaa hakusanaa tarkemmaksi.
+```bash
+sudo grep -ir "Nmap Scripting"
+```
+Tällä tulos on jo paljon järkevämpi. Löytyy 
+
+
+![204](/kuvat/204.png)
 
 
 
