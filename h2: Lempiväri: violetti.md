@@ -85,9 +85,9 @@ Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-h
 - Avoin portti löytynyt 80/TCP, palvelu: http, Apache httpd 2.4.65 Debianille.
 - Tuetut http metodit: HEAD, GET, POST, OPTIONS.
 - Linux kernel 5.0-6.2 löytynyt
+- **Network Distance: 0 hops**: OS detection päällä näemme kaikki matkalla olevat reitittimet. Localhostia skannatessa 0.
 - **TCP Sequence prediction**: Difficulty 259 = TCP spoofing hyökkäyksen vaikeusaste. Ilmeisen vaikea, koska: (Good luck!).
-
-
+- **IP ID sequence generation**: All zeros: = Tämä näytetään ainoastaan *verbose*-tilassa. Kertoo ID-kentän generointitavan, jota voisi hyödyntää joissain hyökkäyksissä.
 
 ##
 
