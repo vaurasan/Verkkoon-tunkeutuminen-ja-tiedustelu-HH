@@ -54,6 +54,15 @@ Lokin lukemiseen löysin hyvän oloisen lähteen [Sumo logic](https://www.sumolo
 
 ![201](/kuvat/201.png)
 
+- **127.0.0.1** = clientin IP osoite, joka on tehnyt pyynnön palvelimelle.
+- **-** = ensimmäinen viiva on epäluotettava clientin määrittämä RFC 1413 identiteetti, johon ei tulisi luottaa muuta kuin tarkkaan hallituissa verkoissa. Apache ei yritä määrittää tätä, ellei *IdentityCheck* ole asetettu **On**-tilaan.
+- **-** = toisen viivan tilalla olisi käyttäjän nimi, jos dokumentti olisi salasalasuojattu. Tässä tapauksessa pelkkä viiva riittää.
+- Päivämäärä ja aika, jolloin pyyntö on vastaanotettu.
+- **"GET / HTTP/1.1"** = pyynnön tyyppi ja mahdollisesti mihin resurssiin pyyntö kohdistuu.
+- **200** = status koodi, jonka palvelin palauttaa clientille. 2:lla alkava koodi = onnistunut. 3:lla alkava = uudelleenohjaus. 4:llä alkava = clientin aiheuttama virhe. 5:llä alkava = palvelimesta johtuva virhe.
+- **3383** = palautetun objektin koko ilman headereita. Jos mitään ei palautettu clientille, tässä on "-".
+- **"-"** = tämä viiva jäi hieman mysteeriksi. Sumo logic:n ohjeessa mainittiin, että tässä kohdassa voisi lukea source URL, eli tässä tapauksessa **"http://localhost/"**.
+- Viimeisenä User Agent, joka kertoo clientin selaimen yksityiskohtia. 
 
 ##
 
