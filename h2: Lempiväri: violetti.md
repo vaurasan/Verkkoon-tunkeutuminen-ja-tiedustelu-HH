@@ -26,12 +26,19 @@ kali-linux-2025.3-virtualbox-amd64
 
 ### - Selitä tuskan pyramidin idea 1-2 virkkeellä. Bianco 2013: [Pyramid of Pain](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html). (Katso eritoten pyramidin kuvaa.)
 
+Tuskan pyramidi kertoo visuaalisesti:
+
+- Hyökkääjän toiminnan havaitsemisessa käytettävien ilmaisimien välisestä suhteesta.
+- Kuinka paljon mikäkin vastatoimi aiheuttaa hyökkääjälle päänvaivaa.
+
 ### - Selitä timanttimallin (Diamond Model) idea 1-2 virkkeellä. Tekijä esittelee sen aika juhlallisesti, voit myös etsiä yksinkertaisempia artikkeleita [hakukoneella](https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructure&ia=web) tai kelata suoraan timantin kuvaan. Caltagirone et al 2013: [Diamond Model](https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf)
 
+Tässä [webasha.com](https://www.webasha.com/blog/what-is-the-diamond-model-in-cybersecurity-a-beginner-friendly-guide-with-real-world-examples-and-analysis#sec4) oli aika hyvin selitetty asiat selkokielellä.
 
+- Kuinka **Adversary**, eli hyökkääjä käyttää **Capability**ä, eli tapaa tai työkalua puolustajan infrastruktuuria vastaan.
+- Vastapuolella **Infrastructure**, eli puolustajan käytössä olevat järjestelmät ja työkalut, sekä **Victim**, esimerkiksi: yritys, käyttäjä, palvelin, tai laite, joka on hyökkäyksen kohteena.
 
-
-## Otsikko
+## a) Apache log. Asenna Apache-weppipalvelin paikalliselle virtuaalikoneellesi. Surffaa palvelimellesi salaamattomalla HTTP-yhteydellä, http://localhost . Etsi omaa sivulataustasi vastaava lokirivi. Analysoi yksi tällainen lokirivi, eli selitä sen kaikki kohdat. (Jos Apache ei ole kovin tuttu, voit tätä tehtävää varten vain asentaa sen ja testata oletusweppisivulla. Eli ei tarvitse tehdä omia kotisvuja tms.)
 
 
 
@@ -53,6 +60,16 @@ kali-linux-2025.3-virtualbox-amd64
 
 
 ### Lähteet
+
+https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti
+
+https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html
+
+https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructure&ia=web
+
+https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
+
+https://www.webasha.com/blog/what-is-the-diamond-model-in-cybersecurity-a-beginner-friendly-guide-with-real-world-examples-and-analysis#sec4
 
 
 
