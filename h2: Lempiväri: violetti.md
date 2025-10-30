@@ -33,14 +33,26 @@ Tuskan pyramidi kertoo visuaalisesti:
 
 ### - Selitä timanttimallin (Diamond Model) idea 1-2 virkkeellä. Tekijä esittelee sen aika juhlallisesti, voit myös etsiä yksinkertaisempia artikkeleita [hakukoneella](https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructure&ia=web) tai kelata suoraan timantin kuvaan. Caltagirone et al 2013: [Diamond Model](https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf)
 
-Tässä [webasha.com](https://www.webasha.com/blog/what-is-the-diamond-model-in-cybersecurity-a-beginner-friendly-guide-with-real-world-examples-and-analysis#sec4) oli aika hyvin selitetty asiat selkokielellä.
+Tässä [webasha.com](https://www.webasha.com/blog/what-is-the-diamond-model-in-cybersecurity-a-beginner-friendly-guide-with-real-world-examples-and-analysis#sec4) sivulla oli aika hyvin selitetty asiat selkokielellä.
 
 - Kuinka **Adversary**, eli hyökkääjä käyttää **Capability**ä, eli tapaa tai työkalua puolustajan infrastruktuuria vastaan.
 - Vastapuolella **Infrastructure**, eli puolustajan käytössä olevat järjestelmät ja työkalut, sekä **Victim**, esimerkiksi: yritys, käyttäjä, palvelin, tai laite, joka on hyökkäyksen kohteena.
 
 ## a) Apache log. Asenna Apache-weppipalvelin paikalliselle virtuaalikoneellesi. Surffaa palvelimellesi salaamattomalla HTTP-yhteydellä, http://localhost . Etsi omaa sivulataustasi vastaava lokirivi. Analysoi yksi tällainen lokirivi, eli selitä sen kaikki kohdat. (Jos Apache ei ole kovin tuttu, voit tätä tehtävää varten vain asentaa sen ja testata oletusweppisivulla. Eli ei tarvitse tehdä omia kotisvuja tms.)
 
+Vanhasta muistista ja osin tämän tehtävän Karvisen (2025) ohjeesta asensin apache2 web-palvelimen ja käynnistin sen, jonka jälkeen menin seuraamaan palvelimen lokia ja navigoin localhost osoitteeseen selaimella.
 
+´´´bash
+sudo apt-get update
+sudo apt-get install apache2
+sudo systemctl start apache2
+/var/log/apache2/
+pwd
+sudo tail -F /var/log/apache2/access.log
+´´´
+Lokin lukemiseen löysin hyvän oloisen lähteen [Sumo logic](https://www.sumologic.com/blog/apache-access-log), sekä tietenkin [Apachen oma](https://httpd.apache.org/docs/2.4/logs.html) lokien ohje.
+
+![201](/kuvat/201.png)
 
 
 ##
@@ -70,6 +82,10 @@ https://duckduckgo.com/?t=ftsa&q=diamond+model+attacker+capability+infrastructur
 https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf
 
 https://www.webasha.com/blog/what-is-the-diamond-model-in-cybersecurity-a-beginner-friendly-guide-with-real-world-examples-and-analysis#sec4
+
+https://www.sumologic.com/blog/apache-access-log
+
+https://httpd.apache.org/docs/2.4/logs.html
 
 
 
