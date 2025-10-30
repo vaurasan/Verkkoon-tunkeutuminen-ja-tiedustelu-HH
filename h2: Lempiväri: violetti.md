@@ -133,13 +133,14 @@ Toiseen consoleen nmap valmiiksi:
 ```bash
 nmap -v -A 127.0.0.1
 ```
-Wiresharkista tallennus päälle ja nmap ajamaan. Tallensin kaappauksen tiedostoon "nmaptesti30102025.pcap. Karvisen ohjeen mukaan laitoin filteriksi **frame contains "nmap"**. Kuvassa kaikki framet, joista löytyy sana "nmap":
+Wiresharkista tallennus päälle ja nmap ajamaan. Tallensin kaappauksen tiedostoon "nmaptesti30102025.pcap". Karvisen ohjeen mukaan laitoin filteriksi **frame contains "nmap"**. Kuvassa kaikki framet, joista löytyy sana "nmap":
 
 ![205](/kuvat/205.png)
 
+- Kaikki "nmap" sisältävät framet käyttävät HTTP protokollaa.
+- Pyyntöjen tyyppejä: **GET, POST, OPTIONS, PROPFIND**, joista jälkimmäinen ei ole tuttu. [PROPFIND](https://docs.nextcloud.com/server/20/developer_manual/client_apis/WebDAV/basic.html):lla voidaan esimerkiksi pyytää kansion tiedostoista listaus.
 
-
-
+## f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
 
 
 ### Lähteet
@@ -168,7 +169,7 @@ https://nmap.org/nsedoc/scripts/http-methods.html
 
 https://nmap.org/nsedoc/scripts/http-server-header.html
 
-
+https://docs.nextcloud.com/server/20/developer_manual/client_apis/WebDAV/basic.html
 
 ---
 
