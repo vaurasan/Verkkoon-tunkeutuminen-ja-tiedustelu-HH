@@ -20,7 +20,7 @@ Oracle VirtualBox 7.1.12
 
 kali-linux-2025.3-virtualbox-amd64
 
-##
+### [https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti)
 
 
 
