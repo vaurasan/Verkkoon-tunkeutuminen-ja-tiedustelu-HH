@@ -195,7 +195,7 @@ Ctrl+f:llä löysin rivin, joka tuli vastaan aiemmin ngrep:ssä. Muokkaan "nmapl
 
 ![209](/kuvat/209.png)
 
-Apache lokissa ei tietenkään näy "nmap", ja ngrep näyttää pelkkää risuaitaa.
+Apache lokissa ei tietenkään näy "nmap", ja ngrep näyttää pelkkää risuaitaa. Tehtävä suoritettu.
 
 ### Lähteet
 
