@@ -186,8 +186,16 @@ grep -ir "nmaplower"
 
 ![208](/kuvat/208.png)
 
+Tästä viisastuneena menen kansioon ja editoin tiedostoa.
+```bash
+cd nselib
+sudoedit http.lua
+```
+Ctrl+f:llä löysin rivin, joka tuli vastaan aiemmin ngrep:ssä. Muokkaan "nmaplowercheck" -> "HelloWorld" ja tallennan. Kokeilen vielä ajaa nmap:n ja tarkkailen liikennettä. (Löysin tiedostosta myös user-agent rivin, mutta en koskenut siihen.)
 
+![209](/kuvat/209.png)
 
+Apache lokissa ei tietenkään näy "nmap", ja ngrep näyttää pelkkää risuaitaa.
 
 ### Lähteet
 
