@@ -142,6 +142,15 @@ Wiresharkista tallennus päälle ja nmap ajamaan. Tallensin kaappauksen tiedosto
 
 ## f) Net grep. Sieppaa verkkoliikenne 'ngrep' komennolla ja näytä kohdat, joissa on sana "nmap".
 
+Avasin kaksi consolea, Karvisen ohjeilla: 
+```bash
+#Ensimmäiseen valmiiksi
+sudo ngrep -d lo -i nmap
+#Toisella ajoin:
+sudo nmap -A localhost
+```
+
+
 
 ### Lähteet
 
