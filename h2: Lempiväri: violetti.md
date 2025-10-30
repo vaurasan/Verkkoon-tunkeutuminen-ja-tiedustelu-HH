@@ -149,8 +149,10 @@ sudo ngrep -d lo -i nmap
 #Toisella ajoin:
 sudo nmap -A localhost
 ```
+![206](/kuvat/206.png)
 
-
+- Ngrep näyttää nyt reaaliajassa loopbackista kaikki rivit, joissa on sana "nmap".
+- Muu liikenne näkyy "#####":nä.
 
 ### Lähteet
 
