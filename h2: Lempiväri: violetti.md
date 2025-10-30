@@ -81,7 +81,7 @@ Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-h
 
 - Aloitusaika.
 - 157 scriptiä käytössä.
-- 1000 porttia SYN stealth skannattu
+- 1000 porttia SYN stealth skannattu [(myöhempi huomio) Vai oliko sittenkin vain **yksi SYN Stealth scan**?]
 - Avoin portti löytynyt 80/TCP, palvelu: http, Apache httpd 2.4.65 Debianille.
 - Tuetut http metodit: HEAD, GET, POST, OPTIONS.
 - Linux kernel 5.0-6.2 löytynyt
