@@ -89,7 +89,11 @@ Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-h
 - **TCP Sequence prediction**: Difficulty 259 = TCP spoofing hyökkäyksen vaikeusaste. Ilmeisen vaikea, koska: (Good luck!).
 - **IP ID sequence generation**: All zeros: = Tämä näytetään ainoastaan *verbose*-tilassa. Kertoo ID-kentän generointitavan, jota voisi hyödyntää joissain hyökkäyksissä.
 
-##
+## c) Skriptit. Mitkä skriptit olivat automaattisesti päällä, kun käytit "-A" parametria? (Näkyy avoimien porttinumeroiden alta, http-blah, http-blöh...).
+
+- [**http-title**](https://nmap.org/nsedoc/scripts/http-title.html): näyttää web-palvelimen oletussivun otsikon.
+- [**http-methods**](https://nmap.org/nsedoc/scripts/http-methods.html): lähettää *OPTIONS* pyynnön palvelimelle yrittäen selvittää mitä asetuksia palvelimella on käytössä.
+- [**http-server-header**](https://nmap.org/nsedoc/scripts/http-server-header.html): kertoo tietoja palvelinohjelmiston versiosta.
 
 
 ##
@@ -119,6 +123,14 @@ https://httpd.apache.org/docs/2.4/logs.html
 https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/
 
 https://nmap.org/book/osdetect-usage.html
+
+https://nmap.org/nsedoc/scripts/http-title.html
+
+https://nmap.org/nsedoc/scripts/http-methods.html
+
+https://nmap.org/nsedoc/scripts/http-server-header.html
+
+
 
 ---
 
