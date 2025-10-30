@@ -42,14 +42,14 @@ Tässä [webasha.com](https://www.webasha.com/blog/what-is-the-diamond-model-in-
 
 Vanhasta muistista ja osin tämän tehtävän Karvisen (2025) ohjeesta asensin apache2 web-palvelimen ja käynnistin sen, jonka jälkeen menin seuraamaan palvelimen lokia ja navigoin localhost osoitteeseen selaimella.
 
-´´´bash
+```bash
 sudo apt-get update
 sudo apt-get install apache2
 sudo systemctl start apache2
 /var/log/apache2/
 pwd
 sudo tail -F /var/log/apache2/access.log
-´´´
+```
 Lokin lukemiseen löysin hyvän oloisen lähteen [Sumo logic](https://www.sumologic.com/blog/apache-access-log), sekä tietenkin [Apachen oma](https://httpd.apache.org/docs/2.4/logs.html) lokien ohje.
 
 ![201](/kuvat/201.png)
@@ -64,8 +64,16 @@ Lokin lukemiseen löysin hyvän oloisen lähteen [Sumo logic](https://www.sumolo
 - **"-"** = tämä viiva jäi hieman mysteeriksi. Sumo logic:n ohjeessa mainittiin, että tässä kohdassa voisi lukea source URL, eli tässä tapauksessa **"http://localhost/"**.
 - Viimeisenä User Agent, joka kertoo clientin selaimen yksityiskohtia. 
 
-##
+## b) Nmapped. Porttiskannaa oma weppipalvelimesi käyttäen localhost-osoitetta ja 'nmap -A' päällä. Selitä tulokset. (Pelkkä http-portti 80/tcp riittää)
 
+Irroitan varmuuden vuoksi viruaalisen kaaplelin virtuaalikoneesta tehtävän ajaksi. **Network settings** -> **Cable connected**-kohdasta täppä pois.
+
+Nmap:n käyttö on minulle uutta, joten otan [nmap.org](https://nmap.org/book/man-port-scanning-basics.html):n port scanning basics ohjeet käyttöön. Ohjelman sisäisessä ohjeessa tosin kerrotaan jo, että "-A" = Enable OS detection.
+
+Kokeilen skannata localhost osoitetta:
+```bash
+nmap -A 127.0.0.1 #Ohjeessa oli "-v" = "increase verbosity level", tällä tuli paljon enemmän nippelitietoja
+```
 
 
 
