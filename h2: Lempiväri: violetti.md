@@ -95,8 +95,17 @@ Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-h
 - [**http-methods**](https://nmap.org/nsedoc/scripts/http-methods.html): lähettää *OPTIONS* pyynnön palvelimelle yrittäen selvittää mitä asetuksia palvelimella on käytössä.
 - [**http-server-header**](https://nmap.org/nsedoc/scripts/http-server-header.html): kertoo tietoja palvelinohjelmiston versiosta.
 
+## d) Jäljet lokissa. Etsi weppipalvelimen lokeista jäljet porttiskannauksesta (NSE eli Nmap Scripting Engine -skripteistä skannauksessa). Löydätkö sanan "nmap" isolla tai pienellä? Selitä osumat. Millaisilla hauilla tai säännöillä voisit tunnistaa porttiskannauksen jostain muusta lokista, jos se on niin laaja, että et pysty lukemaan itse kaikkia rivejä?
 
-##
+```bash
+cd /var/log/apache2/
+sudo tail -F /var/log/apache2/access.log
+```
+
+![203](/kuvat/203.png)
+
+Monessa kohdassa näkyy "Nmap Scripting Engine;...".
+
 
 
 
