@@ -110,12 +110,12 @@ Monessa kohdassa näkyy "Nmap Scripting Engine;...".
 - 127.0.0.1 localhost osoitteesta tullut http-methods skriptin lähettämiä "OPTIONS" pyyntöjä, sekä yksi "GET" pyyntö.
 - Nmap mainostaa itseään oletusarvoisesti. 
 
-Lähdin tutkimaan lokitiedostoja.
+Siirryin tutkimaan laajemmin lokitiedostoja.
 ```bash
 cd /var
 grep -ir "nmap" #tähän oli vinkki Karvisen tehtävänannon lopussa, *-ir* etsii kaikista alihakemistoista. 
 ```
-Tuloksia tuli aivan liikaa, pitää muuttaa hakusanaa tarkemmaksi.
+Tuloksia tuli aivan liikaa, "nmap" kaappasi kaikki "zenmap" yms. sanat. Pitää muuttaa hakua tarkemmaksi.
 ```bash
 sudo grep -ir "Nmap Scripting"
 ```
@@ -124,6 +124,22 @@ Tällä tulos on jo paljon järkevämpi. Löytyy ainoastaan rivit missä on "Nma
 ![204](/kuvat/204.png)
 
 ## e) Wire sharking. Sieppaa verkkoliikenne porttiskannatessa Wiresharkilla. Huomaa, että localhost käyttää "Loopback adapter" eli "lo". Tallenna pcap. Etsi kohdat, joilla on sana "nmap" ja kommentoi niitä. Jokaisen paketin jokaista kohtaa ei tarvitse analysoida, yleisempi tarkastelu riittää.
+
+Wireshark päälle:
+```bash
+wireshark
+```
+Toiseen consoleen nmap valmiiksi:
+```bash
+nmap -v -A 127.0.0.1
+```
+Wiresharkista tallennus päälle ja nmap ajamaan. Tallensin kaappauksen tiedostoon "nmaptesti30102025.pcap. Karvisen ohjeen mukaan laitoin filteriksi **frame contains "nmap"**. Kuvassa kaikki framet, joista löytyy sana "nmap":
+
+![205](/kuvat/205.png)
+
+
+
+
 
 
 ### Lähteet
