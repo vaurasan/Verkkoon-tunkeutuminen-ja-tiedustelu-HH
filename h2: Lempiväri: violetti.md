@@ -154,6 +154,32 @@ sudo nmap -A localhost
 - Ngrep näyttää nyt reaaliajassa loopbackista kaikki rivit, joissa on sana "nmap".
 - Muu liikenne näkyy "#####":nä.
 
+## g) Agentti. Vaihda nmap:n user-agent niin, että se näyttää tavalliselta weppiselaimelta.
+
+Kokeilen [Bob Van Der Staak](https://infosecwriteups.com/evading-detection-while-using-nmap-69633df091f3):n komentoa user agentin vaihtamiseen, muokaten komennon haluamanilaiseksi. Ajan komennon.
+
+```bash
+nmap -v --script-args http.useragent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3" -A 127.0.0.1
+```
+
+## h) Pienemmät jäljet. Porttiskannaa weppipalvelimesi uudelleen localhost-osoitteella. Tarkastele sekä Apachen lokia että siepattua verkkoliikennettä. Mikä on muuttunut, kun vaihdoit user-agent:n? Löytyykö lokista edelleen tekstijono "nmap"?
+
+Äskeisessä tehtävässä minulla oli vielä ngrep tarkkailemassa liikennettä. Yksi rivi tuli vielä, mistä löytyy "nmap".
+```bash
+T 127.0.0.1:50152 -> 127.0.0.1:80 [AP] #4447
+  GET /nmaplowercheck1761827013 HTTP/1.1..User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (K
+  HTML..Host: localhost..Connection: close....
+```
+
+![207](/kuvat/207.png)
+
+- Kuvassa ylhäällä Apachen lokit, joissa ei näy "nmpap":a enää. (Laitoin vielä tuon consolen **Actions -> Find -> "nmap"**, eikä löytynyt)
+- Alhaalla ngrep, jossa näkyy tuo yksi rivi, jossa "nmap".
+
+## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
+
+
+
 ### Lähteet
 
 https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h2-lempivari-violetti
@@ -181,6 +207,8 @@ https://nmap.org/nsedoc/scripts/http-methods.html
 https://nmap.org/nsedoc/scripts/http-server-header.html
 
 https://docs.nextcloud.com/server/20/developer_manual/client_apis/WebDAV/basic.html
+
+https://infosecwriteups.com/evading-detection-while-using-nmap-69633df091f3
 
 ---
 
