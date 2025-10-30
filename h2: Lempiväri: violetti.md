@@ -178,6 +178,15 @@ T 127.0.0.1:50152 -> 127.0.0.1:80 [AP] #4447
 
 ## i) Hieman vaikeampi: LoWeR ChEcK. Poista skritiskannauksesta viimeinenkin "nmap" -teksti. Etsi löytämääsi tekstiä /usr/share/nmap -hakemistosta ja korvaa se toisella. Tee porttiskannaus ja tarkista, että "nmap" ei näy isolla eikä pienellä kirjoitettuna Apachen lokissa eikä siepatussa verkkoliikenteessä. (Tässä tehtävässä voit muokata suoraan lua-skriptejä /usr/share/nmap alta, 'sudoedit'. Muokatun version paketoiminen siis rajataan ulos tehtävästä.)
 
+Navigoin kansioon ja etsin ngrepin perusteella löytämän tekstin avulla tiedostoista jäljellä olevan "nmap":n.
+```bash
+cd /usr/share/nmap
+grep -ir "nmaplower"
+```
+
+![208](/kuvat/208.png)
+
+
 
 
 ### Lähteet
