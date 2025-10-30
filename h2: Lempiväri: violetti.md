@@ -72,8 +72,20 @@ Nmap:n käyttö on minulle uutta, joten otan [nmap.org](https://nmap.org/book/ma
 
 Kokeilen skannata localhost osoitetta:
 ```bash
-nmap -A 127.0.0.1 #Ohjeessa oli "-v" = "increase verbosity level", tällä tuli paljon enemmän nippelitietoja
+nmap -v -A 127.0.0.1 #Ohjeessa oli "-v" = "increase verbosity level"
 ```
+
+![202](/kuvat/202.png)
+
+Tulkitsen tuloksia tätä hyödyntäen: [https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/](https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/). Ei ehkä ihan täydellinen ohje, neuvotaan filteröimään portit 1-1000 komennolla "sudo nmap -sS -Pn 1-1000 10.143.85.1", mutta kuvassa näkyy, "Failed to resolve "1-1000". Nmap.org:sta löytyy yksityiskohtaisempia tietoja [https://nmap.org/book/osdetect-usage.html](https://nmap.org/book/osdetect-usage.html).
+
+- Aloitusaika.
+- 157 scriptiä käytössä.
+- 1000 porttia SYN stealth skannattu
+- Avoin portti löytynyt 80/TCP, palvelu: http, Apache httpd 2.4.65 Debianille.
+- Tuetut http metodit: HEAD, GET, POST, OPTIONS.
+- Linux kernel 5.0-6.2 löytynyt
+- **TCP Sequence prediction**: Difficulty 259 = TCP spoofing hyökkäyksen vaikeusaste. Ilmeisen vaikea, koska: (Good luck!).
 
 
 
@@ -104,7 +116,9 @@ https://www.sumologic.com/blog/apache-access-log
 
 https://httpd.apache.org/docs/2.4/logs.html
 
+https://www.geeksforgeeks.org/ethical-hacking/nmap-scanning-results/
 
+https://nmap.org/book/osdetect-usage.html
 
 ---
 
